@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div style="widht:100%" align="center">
+    <form method="post">
+        <div class="">            
+            <label> Kullanıcı Adı: </label>
+            <input class="loginekrani" placeholder="Email" type="text" name="isim"><br><br>
+
+            <label style="padding:25px;"> Parola:  </label>
+            <input class="loginekrani" placeholder="Şifre" type="password" name="sifre"><br><br>
+
+            <input type="submit" class="button" value="Giriş"><br>
+        </div>     
+    </form>
+</div>
+
+{% endblock  %}

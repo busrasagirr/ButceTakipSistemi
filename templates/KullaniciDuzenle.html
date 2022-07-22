@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2> Kullanıcı Düzenle: </h2>
+<form method="post">
+    <div class="solB">
+        <label class="lbl"> Ad : </label><br><br>
+        <label class="lbl"> Soyad : </label><br><br>
+        <input type="hidden" name="KullaniciID" value = "{{ veri[0] }}"><br>
+        <label class="lbl"> Telefon : </label><br><br>
+        <label class="lbl"> Mail : </label><br><br>
+        <label class="lbl"> Şifre : </label><br>
+    </div>
+    <div class="sagB">  
+        <input type="text" name="Ad" class="textBox" value = "{{ veri[1] }}"><br><br>     
+        <input type="text" name="Soyad" class="textBox" value = "{{ veri[2] }}"><br><br>
+        <input type="text" name="Telefon" class="textBox" value = "{{ veri[3] }}"><br><br>
+        <input type="text" name="Mail" class="textBox" value = "{{ veri[4] }}"><br><br>
+        <input type="text" name="Sifre" class="textBox" value = "{{ veri[5] }}"><br><br>
+        <input type="submit" class="button">
+    </div> 
+</form>
+
+{% endblock %}

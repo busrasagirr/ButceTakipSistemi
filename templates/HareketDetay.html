@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2> Detaylar: </h2>
+<div class="book">
+    <div class="solB">
+        <label class="lbl"> Ad : </label><br><br>
+        <label class="lbl"> Soyad : </label><br><br>
+        <label class="lbl"> Kategori : </label><br><br>
+        <label class="lbl"> Gelir/Gider : </label><br><br>
+        <label class="lbl"> Tutar : </label><br><br>
+        <label class="lbl"> Tarih : </label><br><br>
+    </div>
+    <div class="sagB">
+        <label class="lbl"> {{ veri[1] }}</label><br><br>
+        <label class="lbl"> {{ veri[2] }}</label><br><br>
+        <label class="lbl"> {{ veri[3] }}</label><br><br>
+        <label class="lbl"> {{ veri[4] }}</label><br><br>
+        <label class="lbl"> {{ veri[5] }}</label><br><br>
+        <label class="lbl"> {{ veri[6] }}</label><br><br>
+    </div>
+</div>
+
+
+{% endblock %}

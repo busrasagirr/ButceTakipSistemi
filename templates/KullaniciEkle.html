@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2> Kullanıcı Ekle: </h2>
+<form method="post">
+    <div class="solB"><br>
+        <label class="lbl"> Ad:  </label><br><br>
+        <label class="lbl"> Soyad:  </label><br><br>
+        <label class="lbl"> Telefon:  </label><br><br>
+        <label class="lbl"> Mail:  </label><br><br>
+        <label class="lbl"> Şifre:  </label><br><br>
+    </div>
+    <div class="sagB">
+        <input type="text" name="Ad" class="textBox"><br><br>
+        <input type="text" name="Soyad" class="textBox"><br><br>
+        <input type="text" name="Telefon" class="textBox"><br><br> 
+        <input type="text" name="Mail" class="textBox"><br><br>
+        <input type="text" name="Sifre" class="textBox"><br><br>
+
+        <input type="submit" class="button" value="Kaydet">
+    </div>
+    
+    
+</form>
+{% endblock  %}

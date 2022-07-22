@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .menu {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+
+        .menu a {
+            background-color: #e5e5e5;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 100%;
+            color: black;
+            text-decoration: none;
+        }
+
+        .menu a:hover{
+            background-color: #985898;
+            color: #ffff;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 100%;
+        }       
+
+        .right {
+            background-color: #e5e5e5;
+            float: right;
+            width: 20%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+        }
+
+        .book {
+            background-color: #e5e5e5;
+            color: #111;
+            float: left;
+            width: 100%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .button{
+            color: #985898;
+            background-color: #F8CO88;
+            padding: 5px 15px 5px 15px;
+            text-align: center;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button:hover{
+            color: #fff;
+            background-color: #985898;
+        }
+        .sagB{
+            float: right;
+            width: 70%;
+            padding: 15px;
+            margin-top: 7px;
+        }
+        .solB{
+            float: left;
+            width: 30%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+        }
+
+        .loginekrani{
+            border:2px solid #985898;
+            border-top-color:#fff;
+            border-left-color:#fff;
+            border-right-color:#fff;
+            border-bottom-color:lightgray;
+            color:#202020;
+            height:40px;
+            text-align:left;
+            padding-left:16px;
+            margin-bottom:-7px;
+            width:50%;
+            /*border-color:#FA6355;*/
+        }
+        .loginekrani:hover{
+            border-bottom-color:#985898;
+        }
+
+        .textBox{
+            border:2px solid #985898;            
+            color:#202020;
+            height:30px;
+            text-align:left;
+            padding-left:16px;
+            margin-bottom:-7px;
+            /*width:100%;*/
+            /*border-color:#FA6355;*/
+        }
+        
+        .lbl{
+            height:60px;
+            color:#202020;
+            font-weight:bold;
+            text-align:left;
+            margin:10px 10px 10px 10px;
+            /*width:100%;*/
+            /*border-color:#FA6355;*/
+        }
+
+        .solDiv{
+            widht:30%;
+            height:60px;
+            float:left;
+            padding:50px;
+            text-align:center;            
+        }
+        .solDiv input,label{
+            cursor:pointer;
+        }
+        .sagDiv{
+            widht:40%;
+            padding:50px;
+            height:60px;
+            float:left;
+            text-align:center;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+          }
+          
+          .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+          }
+          
+          .sidenav a:hover {
+            background-color: #985898;
+            color: #fff;
+          }
+          
+          .main {
+            margin-left: 160px; /* Same as the width of the sidenav */      
+            padding: 0px 10px;
+          }
+          .ana{
+            margin-left: 160px;
+            margin-top: 150px;
+            width: 80%;
+            padding: 0 20px;
+          }
+        .a{
+            text-decoration: none;
+        }
+        @media only screen and (max-width: 620px) {
+
+            /* For mobile phones: */
+            .menu,
+            .main,
+            .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+    <div class="navbar" style="background-color:#985898; color:#fff; overflow:hidden; position:fixed; width:100%; top:0; text-align:center;">
+        <h1 style="display: block; padding: 24px 20px; text-decoration: none;">Bütçe Takip Sistemi</h1>
+    </div>

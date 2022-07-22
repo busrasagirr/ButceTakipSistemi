@@ -1,0 +1,11 @@
+{% include "/part/_header.html" %}
+
+<div style="overflow:auto">
+    {% include "part/_menu.html" %}
+    <div class="ana">
+        {% block content %}
+        {% endblock  %}
+    </div>
+</div>
+
+{% include "part/_footer.html" %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2> Kullanıcılar: </h2>
+<ul>
+    {% for d in veri %}
+    <div class="book">
+        <a style="text-decoration:none; color:#985898" href="/KullaniciDetay/{{d[0]}}">  
+            <h4> {{d[1]}} {{ d[2] }}</h4>
+        </a>
+        <div>
+            <b>Telefon :</b> {{ d[3] }}
+            <b>Mail :</b> {{ d[4] }}
+            <b>Şifre :</b> {{ d[5] }}
+        </div>
+
+        <div class="sagB">
+            <form action="/KullaniciSil/{{ d[0] }}">
+                <input type="submit" value="Sil" class="button">
+            </form>
+        </div>
+        <div class="solB">
+            <form action="/KullaniciDuzenle/{{ d[0] }}">
+                <input type="submit" value="Güncelle" class="button">
+            </form>
+        </div>
+    </div>
+    {% endfor %}
+</ul>
+
+
+{% endblock  %}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2> Hareketler </h2>
+<div style="widht:100%; height:80px">
+    <form style="widht:100%" action="/Hareketler" method="post">
+        <div class="solDiv">
+            <input type="radio" id="secim1" name="secim" value="Tümü">
+            <label for="secim1">Tümü</label><br>
+        </div>
+        <div class="solDiv">
+            <input type="radio" id="secim2" name="secim" value="gelir">
+            <label for="secim2">Gelir</label><br>
+        </div>
+        <div class="solDiv">
+            <input type="radio" id="secim3" name="secim" value="gider">
+            <label for="secim3">Gider</label><br>
+        </div>
+        <div class="sagDiv">
+            <input type="submit" value="Listele" class="button">
+        </div>        
+    </form>
+</div><br>
+
+
+<ul>
+    {% for d in veri %}
+    <div class="book">
+        <a style="text-decoration:none; color:#985898" href="/HareketDetay/{{d[0]}}">  
+            <h4> {{d[3]}} </h4>
+        </a>
+        <div>
+            <b>Ad :  </b> {{ d[1] }} <br>
+            <b>Soyad :  </b> {{ d[2] }} <br>
+            <b>Gelir/Gider :  </b> {{ d[4] }} <br>
+            <b>Tutar :  </b> {{ d[5] }} <br>
+            <b>Tarih :  </b> {{ d[6] }}
+        </div>
+
+        <div class="sagB">
+            <form action="/HareketSil/{{ d[0] }}">
+                <input type="submit" value="Sil" class="button">
+            </form>
+        </div>
+        <div class="solB">
+            <form action="/HareketDuzenle/{{ d[0] }}">
+                <input type="submit" value="Güncelle" class="button">
+            </form>
+        </div>
+    </div>
+    {% endfor %}
+</ul>
+
+
+{% endblock  %}

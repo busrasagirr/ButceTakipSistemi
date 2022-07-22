@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2> Hareket Ekle: </h2>
+<form method="post">
+    <div class="solB">
+        <label class="lbl"> Kategori: </label><br><br><br>
+        <label class="lbl"> Tutar : </label><br><br>
+        <label class="lbl"> Tarih : </label><br><br>
+    </div>
+    <div class="sagB">  
+        <form action="/HareketEkle" method="get">
+            <input list="kategoriler" name="Kategori" id="Kategori" style="height:30px; border-color:#985898">
+            <datalist id="kategoriler">
+                {% for d in veri2 %}
+                    <option value="{{ d[1] }}">
+                {% endfor %}
+            </datalist>
+        </form><br><br>
+        <input type="text" name="Tutar" class="textBox"><br><br>    
+        <input type="date" name="Tarih" class="textBox"><br><br>
+    
+        <input type="submit" class="button">
+    </div>
+</form>
+
+{% endblock  %}
